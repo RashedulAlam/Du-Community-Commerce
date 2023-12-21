@@ -1,0 +1,250 @@
+<div class="container">
+
+    <div class="container" style="margin-top:40px">
+        <div class="row">
+            <div class="col-sm-12 col-md-9 col-md-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="form-group" ng-if="showLoginForm">
+                            <div class="col-md-12 text-center">
+                                <strong>Log in to continue</strong>
+                            </div>
+                        </div>
+                        <div class="form-group" ng-if="showRegistrationForm">
+                            <div class="col-md-12 text-center">
+                                <strong>Register to become a member</strong>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="panel-body">
+                        <form class="form-horizontal form" ng-submit="registerForm.$valid && registerUser()"
+                              name="registerForm" ng-if="showRegistrationForm">
+                            <!--<div class="form-group">-->
+                            <!--<label class="h3 col-sm-6  text-center">Registration Form</label>-->
+                            <!--</div>-->
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Name : </label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control"
+                                           ng-model="product.UserName" placeholder="Enter name"
+                                           required minlength="5" maxlength="50" name="name"
+                                    >
+                                </div>
+                                <div ng-show="registerForm.$submitted || registerForm.name.$touched">
+                    <span style="color: red;;" ng-show="registerForm.name.$error.required">
+                        <label class="control-label">You must enter the product name</label>
+                    </span>
+                                    <span style="color: red;;" ng-show="registerForm.name.$error.minlength">
+                        <label>Name must be atleast 5 letters</label>
+                    </span>
+                                    <span style="color: red;;" ng-show="registerForm.name.$error.maxlength">
+                        <label>Name must be atmost 50 letters</label>
+                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Email : </label>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" ng-model="user.UserEmail"
+                                           placeholder="Enter email"
+                                           name="email" ng-required="true"
+                                    >
+                                </div>
+                                <div ng-show="registerForm.$submitted || registerForm.email.$touched">
+                    <span style="color: red;;" ng-show="registerForm.email.$error.required">
+                        <label>You must enter email</label>
+                    </span>
+                                    <span style="color: red;;" ng-show="registerForm.email.$error.email">
+                        <label>Invalid email</label>
+                    </span>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Password</label>
+                                <div class="col-sm-6">
+                                    <input class="form-control" type="password" ng-model="user.UserPassword"
+                                           placeholder="Enter password" required minlength="3" maxlength="10"
+                                           name="password"
+                                    >
+                                </div>
+                                <div ng-show="registerForm.$submitted || registerForm.password.$touched">
+                    <span style="color: red;;" ng-show="registerForm.password.$error.required">
+                        <label class="control-label">You must enter password</label>
+                    </span>
+                                    <span style="color: red;;" ng-show="registerForm.password.$error.minlength">
+                        <label>Password must be atleast 3 letters</label>
+                    </span>
+                                    <span style="color: red;;" ng-show="registerForm.password.$error.maxlength">
+                        <label>password must be atmost 10 letters</label>
+                    </span>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Confirm password</label>
+                                <div class="col-sm-6">
+                                    <input class="form-control" type="password" ng-model="user.password_verify"
+                                           name='confirm_password' placeholder='confirm password' required
+                                           data-password-verify="user.UserPassword"
+                                    >
+                                </div>
+                                <div ng-show="registerForm.$submitted || registerForm.confirm_password.$touched">
+                    <span style="color: red;;" ng-show="registerForm.confirm_password.$error.required">
+                        <label class="control-label">You must enter password</label>
+                    </span>
+                                    <span style="color: red;;"
+                                          ng-show="registerForm.confirm_password.$error.passwordVerify">
+                        <label>Password did not match</label>
+                    </span>
+
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Address</label>
+                                <div class="col-sm-6">
+                    <textarea class="form-control" ng-model="user.Address"
+                              placeholder="Enter address" minlength="5" maxlength="100"
+                              required name="address" ng-required="true"
+                    >
+                    </textarea>
+                                </div>
+                                <div ng-show="registerForm.$submitted || registerForm.address.$touched">
+                    <span style="color: red;;" ng-show="registerForm.address.$error.required">
+                        <label class="control-label">You must enter address</label>
+                    </span>
+                                    <span style="color: red;;" ng-show="registerForm.address.$error.minlength">
+                        <label>Description must be atleast 10 letters</label>
+                    </span>
+                                    <span style="color: red;;" ng-show="registerForm.address.$error.maxlength">
+                        <label>Description must be atmost 100 letters</label>
+                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Mobile Number : </label>
+                                <div class="col-sm-6">
+                                    <input class="form-control" ng-model="user.MobileNumber" type="number"
+                                           placeholder="Enter mobile number" ng-minlength="11" ng-maxlength="11"
+                                           required name="mobile" ng-required="true"
+                                    >
+
+                                </div>
+                                <div ng-show="registerForm.$submitted || registerForm.mobile.$touched">
+                    <span style="color: red;;" ng-show="registerForm.mobile.$error.required">
+                        <label class="control-label">You must enter mobile number</label>
+                    </span>
+                                    <span style="color: red;;"
+                                          ng-show="registerForm.mobile.$error.minlength || registerForm.mobile.$error.minlength ">
+                        <label>Mobile Number should be 11 digit</label>
+                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Gender : </label>
+                                <div class="col-sm-6">
+                                    <select chosen
+                                            data-placeholder-text-single="'Select your Gender'"
+                                            allow-single-deselect="true"
+                                            ng-model="user.Gender"
+                                            ng-options="a as a for a in ['Male','Female']"
+                                            style="width: 400px"
+                                            ng-required="true" name="gender"
+                                    >
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div ng-show="registerForm.$submitted || registerForm.gender.$touched">
+                    <span style="color: red;" ng-show="registerForm.gender.$error.required">
+                        <label class="control-label">You must select your gender</label>
+                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-6">
+                                    <input class="btn btn-primary btn-block" type="submit" value="Register"
+                                           ng-disabled="!registerForm.$valid"/>
+                                </div>
+                            </div>
+                        </form>
+                        <form class="form-horizontal form" ng-submit="loginForm.$valid && loginUser()"
+                              name="loginForm" ng-if="showLoginForm">
+                            <!--<div class="form-group">-->
+                            <!--<label class="h3 col-sm-6  text-center">Login Form</label>-->
+                            <!--</div>-->
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Email : </label>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" ng-model="loginModel.username"
+                                           placeholder="Enter email"
+                                           name="email" ng-required="true"
+                                    >
+                                </div>
+                                <div ng-show="loginForm.$submitted || loginForm.email.$touched">
+                    <span style="color: red;;" ng-show="loginForm.email.$error.required">
+                        <label>You must enter email</label>
+                    </span>
+                                    <span style="color: red;;" ng-show="loginForm.email.$error.email">
+                        <label>Invalid email</label>
+                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Password</label>
+                                <div class="col-sm-6">
+                                    <input class="form-control" type="password" ng-model="loginModel.password"
+                                           placeholder="Enter password" required minlength="3" maxlength="10"
+                                           name="password"
+                                    >
+                                </div>
+                                <div ng-show="loginForm.$submitted || loginForm.password.$touched">
+                    <span style="color: red;;" ng-show="loginForm.password.$error.required">
+                        <label class="control-label">You must enter password</label>
+                    </span>
+                                    <span style="color: red;;" ng-show="loginForm.password.$error.minlength">
+                        <label>Password must be atleast 3 letters</label>
+                    </span>
+                                    <span style="color: red;;" ng-show="loginForm.password.$error.maxlength">
+                        <label>Password must be atmost 10 letters</label>
+                    </span>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-6">
+                                    <input class="btn btn-primary btn-block" type="submit" value="Log In"
+                                           ng-disabled="!loginForm.$valid"/>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="panel-footer ">
+                        <div class="form-group" ng-if="showRegistrationForm">
+                            <div class="col-md-12 text-center">
+                                <a href="" ng-click="showLoginFormFunction()">Already have account?</a>
+                            </div>
+                        </div>
+                        <div class="form-group" ng-if="showLoginForm">
+                            <div class="col-md-12 text-center">
+                                <a href="" ng-click="showRegistrationFormFunction()">Don't have an account?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

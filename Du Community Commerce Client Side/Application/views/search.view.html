@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-5">
+            <span class="col-md-2" ng-show="showSpinner">
+                <i class="fa fa-spinner fa-pulse fa-5x fa-fw post-product-loading-icon">
+                </i>
+            </span>
+        </div>
+        <div class="col-md-12" >
+
+            <div class="alert alert-info" ng-if="products.length==0">
+                <strong><p class="text-center h1">No product is available in this subcategory</p></strong>
+            </div>
+
+            <div class="col-sm-6 col-md-3" ng-repeat="product in products">
+                <div class="thumbnail">
+                    <h4 class="text-center"><span class="label label-info">{{product.ProductName}}</span></h4>
+                    <img data-ng-src="data:image/png;base64,{{imageData[product.ProductId]}}" class="product-card"
+                         height="100px"
+                         width="100px"
+                         alt="Image Can not be Loaded">
+                    <div class="caption">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 text-center">
+                                <h3>
+                                    <label>BDT.{{product.ProductPrice}}</label>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button class="btn btn-primary col-md-12" ng-click="gotoProductDetails(product)">View
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

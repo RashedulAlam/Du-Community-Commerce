@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DU Community Commerce</title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="Application/Application.js"></script>
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <script src="bower_components/leaflet/leaflet.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/leaflet/leaflet.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="Application/styles/customCSS.css" type="text/css" rel="stylesheet">
+    <script src="bower_components/chosen/chosen.jquery.js"></script>
+    <script src="bower_components/angular-chosen-localytics/dist/angular-chosen.min.js"></script>
+    <link href="bower_components/chosen/chosen.css" type="text/css" rel="stylesheet">
+    <link href="bower_components/angular-chosen-localytics/chosen-spinner.css" type="text/css" rel="stylesheet">
+    <link type="image_src" href="bower_components/chosen/chosen-sprite.png">
+    <script src="bower_components/ng-file-upload/ng-file-upload.min.js"></script>
+    <script src="bower_components/angular.uuid2/dist/angular-uuid2.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <link href="bower_components/angular-toastr/dist/angular-toastr.min.css" rel="stylesheet" type="text/css">
+    <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <script src="bower_components/lodash/dist/lodash.min.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+</head>
+<body>
+<div ng-app="application">
+    <div ng-controller="sampleController">
+        <div class="col-lg-12">
+            <div class="page-loading col-md-offset-5 top-buffer">
+                <div class="loader">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div ui-view>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="Application/services/remote-service.js"></script>
+<script src="Application/directives/directives.js"></script>
+<script src="Application/services/services.js"></script>
+<script src="Application/services/http-intercept.js"></script>
+<script src="Application/services/authentication-service.js"></script>
+<script src="Application/controllers/navbar.controller.js"></script>
+<script src="Application/controllers/sidebar.controller.js"></script>
+<script src="Application/controllers/post-product.controller.js"></script>
+<script src="Application/controllers/message.controller.js"></script>
+<script src="Application/controllers/subcategory.controller.js"></script>
+<script src="Application/controllers/login-registration.controller.js"></script>
+<script src="Application/controllers/product-details.controller.js"></script>
+<script src="Application/controllers/map-controller.js"></script>
+<script src="Application/controllers/home.controller.js"></script>
+<script src="Application/controllers/search.controller.js"></script>
+</body>
+</html>

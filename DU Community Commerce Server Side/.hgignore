@@ -1,0 +1,8 @@
+syntax: regexp
+DU Community Commerce Server Side/packages/
+DU Community Commerce Server Side/DU Community Commerce Server Side/bin/
+DU Community Commerce Server Side/DU Community Commerce Server Side/obj/Debug/
+DU Community Commerce Server Side/DU Community Commerce Server Side/Uploads/
+syntax: glob
+DU Community Commerce Server Side/.vs/config/applicationhost.config
+DU Community Commerce Server Side/DU Community Commerce Server Side/DU Community Commerce Server Side.csproj

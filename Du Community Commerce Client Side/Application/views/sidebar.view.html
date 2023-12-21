@@ -1,0 +1,42 @@
+<div class="row">
+    <ul class="dropdown-menu dropdown-menu-sidebar" role="menu" aria-labelledby="dropdownMenu">
+        <li class="dropdown-submenu">
+            <a tabindex="-1" href="#">View By Categories</a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-submenu" ng-repeat="(category,subcategories) in categories"><a
+                        href="#">{{category}}</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <label class="label label-primary">{{category}}</label>
+                        </li>
+                        <li ng-repeat="subcategory in subcategories">
+                            <a href="#"
+                               ng-click="goTOSubcategory(subcategory.subcategory)">{{subcategory.subcategory}}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--<ul class="dropdown-menu dropdown-menu-sidebar nav nav-pills nav-stacked" role="menu"-->
+    <!--aria-labelledby="dropdownMenu">-->
+    <!--<li>-->
+    <!--<label class="label label-primary">All Categories</label>-->
+    <!--</li>-->
+    <!--<li class="dropdown-submenu" ng-repeat="(category,subcategories) in categories"><a href="#">{{category}}</a>-->
+    <!--<ul class="dropdown-menu">-->
+    <!--<li>-->
+    <!--<label class="label label-primary">{{category}}</label>-->
+    <!--</li>-->
+    <!--<li ng-repeat="subcategory in subcategories">-->
+    <!--<a href="#"-->
+    <!--ng-click="goTOSubcategory(subcategory.subcategory)">{{subcategory.subcategory}}-->
+    <!--</a>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+</div>

@@ -1,0 +1,33 @@
+{
+  "name": "DU Community Commerce Client Side",
+  "description": "This a c2c2 e-commerce site client side",
+  "main": "Index.html",
+  "moduleType": [],
+  "authors": [
+    "Rashedul Alam"
+  ],
+  "license": "MIT",
+  "homepage": "Index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.6.3",
+    "angular-ui-router": "^0.3.1",
+    "angular-bootstrap": "^2.2.0",
+    "angular-animate": "^1.5.8",
+    "angular-touch": "^1.5.8",
+    "angular-chosen-localytics": "^1.5.0",
+    "ng-file-upload": "^12.2.12",
+    "angular.uuid2": "angular-uuid2#*",
+    "angular-toastr": "^2.1.1",
+    "lodash": "^4.16.4",
+    "angular-local-storage": "^0.5.2"
+  }
+}

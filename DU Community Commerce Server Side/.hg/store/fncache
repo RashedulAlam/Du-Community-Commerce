@@ -1,0 +1,71 @@
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Repositories/IUserHistoryRepository.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Repositories/UserHistoryRepository.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610232100031_ChangedEntiryName.resx.i
+data/DU Community Commerce Server Side/.vs/DU Community Commerce Server Side/v14/.suo.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Models/UserHistory.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Web.Release.config.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Properties/AssemblyInfo.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Controllers/ProductController.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Models/Message.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side.sln.DotSettings.user.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/ViewModels/ImageUpload.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Repositories/SearchItemRepository.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side.sln.DotSettings.user.orig.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610241525004_AddedProductLocation_in_ProductEntity.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/ApplicationInsights.config.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Services/ProductServices.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Repositories/IProductImageRepository.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610232100031_ChangedEntiryName.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Global.asax.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610241604393_ProductEntityChange.resx.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/scripts/ai.0.22.19-build00125.min.js.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610232132183_ChangedcontextClass.Designer.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/scripts/ai.0.22.19-build00125.js.i
+data/DU Community Commerce Server Side/.vs/DU Community Commerce Server Side/v14/.suo.orig.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Global.asax.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Models/ProductImage.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610241604393_ProductEntityChange.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/App_Start/WebApiConfig.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/DU Community Commerce Server Side.csproj.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610241525004_AddedProductLocation_in_ProductEntity.Designer.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Web.Debug.config.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Repositories/ISearchRepository.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610232043012_TestMigration.resx.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/DU Community Commerce Server Side.csproj.user.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/SqlServerTypes/Loader.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610232043012_TestMigration.Designer.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610261640317_Added_Many_newEnttities.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Repositories/IMessageRepository.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Repositories/ICommentRepository.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Repositories/IProductRepository.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610232132183_ChangedcontextClass.cs.i
+data/.hgignore.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side.sln.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Models/SearchItem.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610200957137_Initial.resx.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/Configuration.cs.i
+data/.hgignore.orig.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Repositories/ProductRepository.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Web.config.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Repositories/CommentRepository.cs.i
+data/DU Community Commerce Server Side/.vs/config/applicationhost.config.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Repositories/MessageRepository.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610241604393_ProductEntityChange.Designer.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/packages.config.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610200957137_Initial.Designer.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Application Context/ApplicationContext.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610232132183_ChangedcontextClass.resx.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Models/Product.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610232043012_TestMigration.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610261640317_Added_Many_newEnttities.Designer.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Repositories/ProductImageRepository.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610200957137_Initial.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Models/Comment.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610241525004_AddedProductLocation_in_ProductEntity.resx.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610261640317_Added_Many_newEnttities.resx.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/Migrations/201610232100031_ChangedEntiryName.Designer.cs.i
+data/DU Community Commerce Server Side/DU Community Commerce Server Side/SqlServerTypes/readme.htm.i

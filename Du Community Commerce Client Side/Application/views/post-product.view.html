@@ -1,0 +1,189 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12">
+            <form class="form-horizontal form" novalidate
+                  ng-submit="postProductForm.$valid && postProduct(productImages)"
+                  name="postProductForm" ng-init="initializeMap()">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Product Name</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control"
+                               ng-model="product.ProductName" placeholder="Enter name of the product"
+                               required minlength="5" maxlength="50" name="name"
+                        >
+                    </div>
+                    <div ng-show="postProductForm.$submitted || postProductForm.name.$touched">
+                    <span style="color: red;;" ng-show="postProductForm.name.$error.required">
+                        <label class="control-label">You must enter the product name</label>
+                    </span>
+                        <span style="color: red;;" ng-show="postProductForm.name.$error.minlength">
+                        <label>Name must be atleast 5 letters</label>
+                    </span>
+                        <span style="color: red;;" ng-show="postProductForm.name.$error.maxlength">
+                        <label>Name must be atmost 50 letters</label>
+                    </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Product Price</label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" ng-model="product.ProductPrice"
+                               placeholder="Enter product price in BDT" required min="0"
+                               name="price"
+                        >
+                    </div>
+                    <div ng-show="postProductForm.$submitted || postProductForm.price.$touched">
+                    <span style="color: red;;" ng-show="postProductForm.price.$error.required">
+                        <label class="control-label">You must enter the product price</label>
+                    </span>
+                        <span style="color: red;;" ng-show="postProductForm.price.$error.min">
+                        <label>Price must be greater than zero</label>
+                    </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Product Address</label>
+                    <div class="col-sm-6">
+                        <input class="form-control" type="text" ng-model="product.ProductAddress"
+                               placeholder="Enter product address" required minlength="10" maxlength="40"
+                               name="address"
+                        >
+                    </div>
+                    <div ng-show="postProductForm.$submitted || postProductForm.address.$touched">
+                    <span style="color: red;;" ng-show="postProductForm.address.$error.required">
+                        <label class="control-label">You must enter the product address</label>
+                    </span>
+                        <span style="color: red;;" ng-show="postProductForm.address.$error.minlength">
+                        <label>Address must be atleast 10 letters</label>
+                    </span>
+                        <span style="color: red;;" ng-show="postProductForm.address.$error.maxlength">
+                        <label>Address must be atmost 40 letters</label>
+                    </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Product Description</label>
+                    <div class="col-sm-6">
+                    <textarea class="form-control" ng-model="product.ProductDescription"
+                              placeholder="Enter product Description" minlength="5" maxlength="500"
+                              required name="description" ng-required="true"
+                    >
+                    </textarea>
+                    </div>
+                    <div ng-show="postProductForm.$submitted || postProductForm.description.$touched">
+                    <span style="color: red;;" ng-show="postProductForm.description.$error.required">
+                        <label class="control-label">You must enter the product description</label>
+                    </span>
+                        <span style="color: red;;" ng-show="postProductForm.description.$error.minlength">
+                        <label>Description must be atleast 50 letters</label>
+                    </span>
+                        <span style="color: red;;" ng-show="postProductForm.description.$error.maxlength">
+                        <label>Description must be atmost 500 letters</label>
+                    </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Product Image</label>
+                    <div class="col-sm-6">
+                        <input type="file" class="form-control" ngf-select ng-model="productImages"
+                               name="image"
+                               accept="image/*" ngf-max-size="3MB" required multiple
+                               ngf-model-invalid="errorFile">
+                    </div>
+                    <div ng-show="postProductForm.$submitted || postProductForm.image.$touched">
+                    <span style="color: red;" ng-show="postProductForm.image.$error.required">
+                        <label class="control-label">You must upload the product image</label>
+                    </span>
+                        <span style="color: red;" ng-show="postProductForm.image.$error.maxSize">File too large
+                        {{errorFile.size / 1000000|number:1}}MB: max 3M</span>
+                    </div>
+
+                    <div class="col-md-6 col-md-offset-2">
+                        <div ng-repeat="image in productImages" class="col-md-3">
+                            <img ng-show="postProductForm.image.$valid" ngf-thumbnail="image"
+                                 class="img-rounded img-responsive">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-offset-2 col-sm-6">
+                        <button class="btn  btn-danger btn-block" ng-click="productImages = null"
+                                ng-show="productImages">
+                            Remove Images
+                        </button>
+                    </div>
+
+
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Product Category</label>
+                    <div class="col-sm-6">
+                        <select chosen
+                                data-placeholder-text-single="'Select category of product'"
+                                ng-model="category"
+                                ng-options="s.category for s in categories"
+                                style="width: 400px"
+                                ng-change="selectedItemChanged()"
+                                ng-required="true" name="cat"
+                        >
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div ng-show="postProductForm.$submitted || postProductForm.cat.$touched">
+                    <span style="color: red;" ng-show="postProductForm.cat.$error.required">
+                        <label class="control-label">You must select a category</label>
+                    </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Product Subcategory</label>
+                    <div class="col-sm-6">
+
+                        <select chosen
+                                data-placeholder-text-single="'Select subcategory of product'"
+                                ng-model="product.ProductSubcategory"
+                                ng-options="s for s in subcategories"
+                                style="width: 400px"
+                                ng-required="true" name="subcat"
+                        >
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div ng-show="postProductForm.$submitted || postProductForm.subcat.$touched">
+                    <span style="color: red;" ng-show="postProductForm.subcat.$error.required">
+                        <label class="control-label">You must select a subcategory</label>
+                    </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Product Location</label>
+                    <div class="col-sm-6">
+                        <input type="button" class="form-control btn btn-warning"
+                               ng-value="show==true?'Hide Map':'Select Location'" ng-click="show=!show"
+                        >
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-6" ng-show="show">
+                        <div id="map" style="height: 400px;width: 550px">
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-6">
+                        <input class="btn btn-primary btn-block" type="submit" id="submit" value="Submit"
+                               ng-disabled="!postProductForm.$valid"/>
+
+                    </div>
+                    <span class="col-md-2" ng-show="loadingBar">
+                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw post-product-loading-icon"></i>
+                    </span>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+

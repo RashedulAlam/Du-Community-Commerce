@@ -1,0 +1,258 @@
+[
+  {
+    "category": "Electronics",
+    "subcategory": "Mobile Phones"
+  },
+  {
+    "category": "Electronics",
+    "subcategory": "Mobile Phones Accessories"
+  },
+  {
+    "category": "Electronics",
+    "subcategory": "Computer & Tablets"
+  },
+  {
+    "category": "Electronics",
+    "subcategory": "Computer Accessories"
+  },
+  {
+    "category": "Electronics",
+    "subcategory": "Tvs"
+  },
+  {
+    "category": "Electronics",
+    "subcategory": "Tv & Video Accessories"
+  },
+  {
+    "category": "Electronics",
+    "subcategory": "Cameras & Camcorders"
+  },
+  {
+    "category": "Electronics",
+    "subcategory": "Tvs"
+  },
+  {
+    "category": "Electronics",
+    "subcategory": "Audio & Mp3"
+  },
+  {
+    "category": "Electronics",
+    "subcategory": "Other Electronics"
+  },
+  {
+    "category": "Cars & Vehicles",
+    "subcategory": "Cars"
+  },
+  {
+    "category": "Cars & Vehicles",
+    "subcategory": "Motorbikes & Scooters"
+  },
+  {
+    "category": "Cars & Vehicles",
+    "subcategory": "Bicycles & ThreeWheelers"
+  },
+  {
+    "category": "Cars & Vehicles",
+    "subcategory": "Trucks, Vans & Buses"
+  },
+  {
+    "category": "Cars & Vehicles",
+    "subcategory": "Tractors & Heavy-Duty"
+  },
+  {
+    "category": "Cars & Vehicles",
+    "subcategory": "Auto Parts & Accessories"
+  },
+  {
+    "category": "Cars & Vehicles",
+    "subcategory": "Boats & Water Transports"
+  },
+  {
+    "category": "Cars & Vehicles",
+    "subcategory": "Others cars & vehicles"
+  },
+  {
+    "category": "Property",
+    "subcategory": "Apartments & Flats"
+  },
+  {
+    "category": "Property",
+    "subcategory": "Houses"
+  },
+  {
+    "category": "Property",
+    "subcategory": "Plots and Lands"
+  },
+  {
+    "category": "Property",
+    "subcategory": "Rooms"
+  },
+  {
+    "category": "Property",
+    "subcategory": "Garages"
+  },
+  {
+    "category": "Property",
+    "subcategory": "Commercial Property"
+  },
+  {
+    "category": "Property",
+    "subcategory": "Others Property"
+  },
+  {
+    "category": "Home & Garden",
+    "subcategory": "Furniture"
+  },
+  {
+    "category": "Home & Garden",
+    "subcategory": "Home Appliances"
+  },
+  {
+    "category": "Home & Garden",
+    "subcategory": "Others Home & Garden"
+  },
+  {
+    "category": "Home & Garden",
+    "subcategory": "Electricity, Ac, Bathroom & Garden"
+  },
+  {
+    "category": "Clothing, Health & Beauty",
+    "subcategory": "Clothing"
+  },
+  {
+    "category": "Clothing, Health & Beauty",
+    "subcategory": "Shoes & Footwear"
+  },
+  {
+    "category": "Clothing, Health & Beauty",
+    "subcategory": "Jewellery"
+  },
+  {
+    "category": "Clothing, Health & Beauty",
+    "subcategory": "Sunglasses"
+  },
+  {
+    "category": "Clothing, Health & Beauty",
+    "subcategory": "Watches"
+  },
+  {
+    "category": "Clothing, Health & Beauty",
+    "subcategory": "Bags"
+  },
+  {
+    "category": "Clothing, Health & Beauty",
+    "subcategory": "Health & Beauty Products"
+  },
+  {
+    "category": "Clothing, Health & Beauty",
+    "subcategory": "Others Clothing, Health & Beauty"
+  },
+  {
+    "category": "Hobby, Sport & Kids",
+    "subcategory": "Musical Instruments"
+  },
+  {
+    "category": "Hobby, Sport & Kids",
+    "subcategory": "Sports Equipments"
+  },
+  {
+    "category": "Hobby, Sport & Kids",
+    "subcategory": "Travel, Event & Tickets"
+  },
+  {
+    "category": "Hobby, Sport & Kids",
+    "subcategory": "Handicrafts"
+  },
+  {
+    "category": "Hobby, Sport & Kids",
+    "subcategory": "Art & Collectibles"
+  },
+  {
+    "category": "Hobby, Sport & Kids",
+    "subcategory": "Music, Book & Movies"
+  },
+  {
+    "category": "Hobby, Sport & Kids",
+    "subcategory": "Video Games & Consoles"
+  },
+  {
+    "category": "Hobby, Sport & Kids",
+    "subcategory": "Children's Items"
+  },
+  {
+    "category": "Hobby, Sport & Kids",
+    "subcategory": "Others Hobby, Sport & Kids"
+  },
+  {
+    "category": "Business, Service & Industry",
+    "subcategory": "Services"
+  },
+  {
+    "category": "Business, Service & Industry",
+    "subcategory": "Offices Supplies"
+  },
+  {
+    "category": "Business, Service & Industry",
+    "subcategory": "Industrial Machinery & Tools"
+  },
+  {
+    "category": "Business, Service & Industry",
+    "subcategory": "Raw Materials & Industrial Supplies"
+  },
+  {
+    "category": "Business, Service & Industry",
+    "subcategory": "Licenses, Titles & Tenders"
+  },
+  {
+    "category": "Business, Service & Industry",
+    "subcategory": "Medical Equipments & Supplies"
+  },
+  {
+    "category": "Business, Service & Industry",
+    "subcategory": "Others Business, Service & Industry"
+  },
+  {
+    "category": "Education",
+    "subcategory": "Textbooks"
+  },
+  {
+    "category": "Education",
+    "subcategory": "Tuition"
+  },
+  {
+    "category": "Education",
+    "subcategory": "Others Education"
+  },
+  {
+    "category": "Pets & Animals",
+    "subcategory": "Pets"
+  },
+  {
+    "category": "Pets & Animals",
+    "subcategory": "Farm Animals"
+  },
+  {
+    "category": "Pets & Animals",
+    "subcategory": "Pets & Animal Accessories"
+  },
+  {
+    "category": "Pets & Animals",
+    "subcategory": "Others Pets & Animals"
+  },
+  {
+    "category": "Food & Agriculture",
+    "subcategory": "Foods"
+  },
+  {
+    "category": "Food & Agriculture",
+    "subcategory": "Crops, Seeds & Plants"
+  },
+  {
+    "category": "Food & Agriculture",
+    "subcategory": "Farming Tools & Machinery"
+  },
+  {
+    "category": "Food & Agriculture",
+    "subcategory": "Others Food & Agriculture"
+  }
+]

@@ -1,0 +1,1 @@
+change zoom image and loading div size
